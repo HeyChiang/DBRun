@@ -45,33 +45,31 @@
 #### 环境要求
 - Go 1.21 或更高版本
 - Node.js & npm
+- Wails CLI
 
 #### 安装与运行
 
-1. **克隆项目**
+1. **安装 Wails CLI** (如果尚未安装)
    ```bash
-   git clone https://github.com/your-username/dbrun.git
-   cd dbrun
+   go install github.com/wailsapp/wails/v2/cmd/wails@latest
    ```
 
-2. **安装后端依赖**
+2. **克隆项目**
    ```bash
+   git clone https://github.com/HeyChiang/DBRun.git
+   cd DBRun
+   ```
+
+3. **安装依赖并启动开发环境**
+   ```bash
+   # 安装后端依赖
    go mod tidy
-   ```
-
-3. **安装前端依赖**
-   ```bash
-   cd frontend
-   npm install
-   cd ..
-   ```
-
-4. **启动开发环境**
-   ```bash
+   
+   # 启动开发模式（会自动安装前端依赖）
    wails dev
    ```
 
-5. **构建应用**
+4. **构建应用**
    ```bash
    wails build
    ```

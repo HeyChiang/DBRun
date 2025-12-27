@@ -45,33 +45,31 @@ Whether you are reverse-engineering a legacy database or designing a new schema,
 #### Prerequisites
 - Go 1.21 or higher
 - Node.js & npm
+- Wails CLI
 
 #### Installation
 
-1. **Clone the repository**
+1. **Install Wails CLI** (if not already installed)
    ```bash
-   git clone https://github.com/your-username/dbrun.git
-   cd dbrun
+   go install github.com/wailsapp/wails/v2/cmd/wails@latest
    ```
 
-2. **Install Backend Dependencies**
+2. **Clone the repository**
    ```bash
+   git clone https://github.com/HeyChiang/DBRun.git
+   cd DBRun
+   ```
+
+3. **Install Dependencies & Run**
+   ```bash
+   # Install backend dependencies
    go mod tidy
-   ```
 
-3. **Install Frontend Dependencies**
-   ```bash
-   cd frontend
-   npm install
-   cd ..
-   ```
-
-4. **Run in Development Mode**
-   ```bash
+   # Run in development mode (frontend dependencies will be installed automatically)
    wails dev
    ```
 
-5. **Build for Production**
+4. **Build for Production**
    ```bash
    wails build
    ```
