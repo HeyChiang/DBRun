@@ -1,0 +1,111 @@
+/* these are necessary styles for vue flow */
+@import '@vue-flow/core/dist/style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: SimSun, "宋体", serif;
+    /* 使字体变得更加平滑 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* 去掉默认的8px间距*/
+    margin: 0;
+
+    /* primevue */
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--body-bg);
+    font-weight: normal;
+    color: var(--body-text-color);
+}
+
+#app {
+    height: 100vh;
+    text-align: center;
+}
+
+/* Custom scrollbar styles using CSS variables */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+  border-radius: 10px;
+  border: 2px solid var(--scrollbar-track-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover-bg);
+}
+
+:root {
+    --body-bg: var(--p-surface-50);
+    --box-shadow-color: rgba(60,60,60,0.10);
+    --body-text-color: var(--p-surface-900);
+    --card-border: 1px solid var(--border-color);
+    --card-bg: var(--p-surface-0);
+    --surface-card: var(--card-bg);
+    --surface-section: var(--card-bg);
+    --surface-ground: var(--card-bg);
+    --border-color: var(--p-surface-200);
+    --text-color: var(--p-surface-700);
+    --text-color-primary: var(--text-color);
+    --text-color-secondary: var(--text-color);
+    --overlay-background: #ffffff;
+    --surface-border: rgb(228, 225, 225);
+    --surface-hover: var(--p-surface-300);
+    --surface-hover-light: var(--p-surface-200);
+    --scrollbar-track-bg: var(--p-surface-200);
+    --scrollbar-thumb-bg: var(--p-surface-500);
+    --scrollbar-thumb-hover-bg: var(--p-surface-600);
+}
+
+:root[class='p-dark'] {
+    --box-shadow-color: rgba(80,100,140,0.32);
+    --body-bg: #2B2B2B;
+    --body-text-color: var(--p-surface-50);
+    --card-border: 1px solid transparent;
+    --card-bg: #212121;
+    --surface-card: var(--card-bg);
+    --surface-section: var(--card-bg);
+    --surface-ground: var(--card-bg);
+    --surface-border: #313335;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-color: var(--p-surface-0);
+    --text-color-primary: var(--text-color);
+    --text-color-secondary: var(--text-color);
+    --overlay-background: var(--p-surface-900);
+    --surface-hover: #0078D4;
+    --surface-hover-light: rgba(0, 120, 212, 0.6);
+    --scrollbar-track-bg: #2e2e2e;
+    --scrollbar-thumb-bg: #555;
+    --scrollbar-thumb-hover-bg: #777;
+}
+
+.card {
+    background: var(--card-bg);
+    border: var(--card-border);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.no-select {
+    user-select: none; /* 标准语法 */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    -moz-user-select: none; /* Firefox */
+    -khtml-user-select: none; /* Konqueror HTML */
+  }

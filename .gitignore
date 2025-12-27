@@ -1,0 +1,14 @@
+build/bin
+node_modules
+frontend/dist
+data/
+
+# IDE and editor related
+.vscode/
+.idea/
+.trae/
+build/
+.DS_Store
+*.swp
+*.swo
+*.iml
