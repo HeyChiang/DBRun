@@ -26,6 +26,8 @@
 
 Whether you are reverse-engineering a legacy database or designing a new schema, DBRun provides an intuitive canvas to explore table relationships, understand foreign key dependencies, and generate ER diagrams effortlessly.
 
+Open to private projects. Over a decade of full-stack software development experience. Contact: emmet.jiang@gmail.com
+
 ### ✨ Key Features
 
 - **Multi-Database Support**: Connect seamlessly to **MySQL**, **MariaDB**, **PostgreSQL**, **Oracle**, and **SQL Server**.
