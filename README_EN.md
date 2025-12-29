@@ -1,7 +1,7 @@
 # DBRun
 
 <p align="center">
-  <img src="./build/appicon.png" width="128" height="128" alt="DBRun Logo">
+  <img src="./doc/logo.png" width="128" height="128" alt="DBRun Logo">
 </p>
 
 <p align="center">
