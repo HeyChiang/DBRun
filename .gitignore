@@ -7,7 +7,6 @@ data/
 .vscode/
 .idea/
 .trae/
-build/
 .DS_Store
 *.swp
 *.swo
