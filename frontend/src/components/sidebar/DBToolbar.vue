@@ -129,7 +129,7 @@ const handleClearClick = () => {
   border: none;
   padding: 0.2rem;
   background: transparent;
-  border-top: 0.1rem solid var(--surface-border);
+  /* border-top: 0.1rem solid var(--surface-border); */
 }
 
 .icon-toolbar ::v-deep(.p-toolbar) {

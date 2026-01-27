@@ -357,7 +357,7 @@ function handleClearClick() {
 
 <style scoped>
 .page-manager {
-  height: 50%;
+  height: 100%;
   overflow-y: auto;
 }
 
